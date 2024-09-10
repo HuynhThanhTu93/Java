@@ -11,5 +11,8 @@ package spc.edu;
 public class Bai2_TinhTong {
     public static void main(String[] args) {
         System.out.println("CHUONG TRINH TINH TONG 2 SO NGUYEN");
+        int a=5, b=5;
+        int tong = a +b;
+        System.out.println(a + " + " + b + " = " + tong);     
     }
 }
