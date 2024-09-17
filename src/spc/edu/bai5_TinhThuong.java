@@ -37,10 +37,15 @@ public class bai5_TinhThuong {
     }
     public static String Tinhthuong(int a, int b) {
         if(b != 0){
-        return "" + (double)a/b;
+        return Double.toString((double)a/b);
         }
         else
-           return a + " Khong the chia cho 0";
-        
+           return a + " Khong the chia cho 0"; 
+    }
+    public static double Tinhthuong1(int a, int b) {
+        if(b == 0)
+            return 0;
+        else
+            return (double)a/b;
     }
 }
