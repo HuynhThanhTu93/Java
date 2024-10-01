@@ -8,12 +8,12 @@ package spc.edu;
  *
  * @author SPC
  */
-public class Bai8_LuythuaFrame extends javax.swing.JFrame {
+public class GiaiThuaFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form Bai8_LuythuaFrame
+     * Creates new form GiaiThuaFrame
      */
-    public Bai8_LuythuaFrame() {
+    public GiaiThuaFrame() {
         initComponents();
     }
 
@@ -26,30 +26,18 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        txt_KQ = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txt_so = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        txt_mu = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        txt_KQ = new javax.swing.JTextField();
         btn_Tinh = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("CHUONG TRINH TINH LUY THUA");
+        jLabel4.setText("Ket qua");
 
         jLabel2.setText("Nhap so:");
-
-        jLabel3.setText("Nhap mu:");
-
-        txt_mu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_muActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Ket qua");
 
         btn_Tinh.setText("Tinh");
         btn_Tinh.addActionListener(new java.awt.event.ActionListener() {
@@ -58,74 +46,61 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("CHUONG TRINH TINH GIAI THUA");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(61, 61, 61)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(txt_so, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txt_mu)
-                                    .addComponent(txt_KQ)))))
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txt_KQ, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(btn_Tinh)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(txt_so, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(62, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(108, 108, 108))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_Tinh)
+                .addGap(156, 156, 156))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(15, 15, 15)
                 .addComponent(jLabel1)
-                .addGap(27, 27, 27)
+                .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txt_so, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(txt_mu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txt_KQ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btn_Tinh)
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txt_muActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_muActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txt_muActionPerformed
-
     private void btn_TinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TinhActionPerformed
         // TODO add your handling code here:
-        int so, mu, luyThua = 1;
+        int so, giaiThua = 1;
         so = Integer.parseInt(txt_so.getText());
-        mu = Integer.parseInt(txt_mu.getText());
-        for (int i = 0; i < mu; i++) {
-            luyThua *= so; 
+        
+        for (int i = 1; i <= so; i++) {
+            giaiThua *= i; 
         }
-        txt_KQ.setText(String.valueOf(luyThua)); 
+        txt_KQ.setText(String.valueOf(giaiThua)); 
     }//GEN-LAST:event_btn_TinhActionPerformed
 
     /**
@@ -145,20 +120,20 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GiaiThuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GiaiThuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GiaiThuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GiaiThuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bai8_LuythuaFrame().setVisible(true);
+                new GiaiThuaFrame().setVisible(true);
             }
         });
     }
@@ -167,10 +142,8 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_Tinh;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txt_KQ;
-    private javax.swing.JTextField txt_mu;
     private javax.swing.JTextField txt_so;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,12 +8,12 @@ package spc.edu;
  *
  * @author SPC
  */
-public class Bai8_LuythuaFrame extends javax.swing.JFrame {
+public class Bai10_GiaiPTBac2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Bai8_LuythuaFrame
+     * Creates new form Bai10_GiaiPTBac2
      */
-    public Bai8_LuythuaFrame() {
+    public Bai10_GiaiPTBac2() {
         initComponents();
     }
 
@@ -28,30 +28,28 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txt_so = new javax.swing.JTextField();
+        txt_a = new javax.swing.JTextField();
+        txt_b = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txt_mu = new javax.swing.JTextField();
+        txt_c = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txt_KQ = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
         btn_Tinh = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("CHUONG TRINH TINH LUY THUA");
+        jLabel1.setText("GIẢI PHƯƠNG TRÌNH BẬC 2");
 
-        jLabel2.setText("Nhap so:");
+        jLabel2.setText("A");
 
-        jLabel3.setText("Nhap mu:");
+        jLabel3.setText("B");
 
-        txt_mu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_muActionPerformed(evt);
-            }
-        });
+        jLabel4.setText("C");
 
-        jLabel4.setText("Ket qua");
+        jLabel5.setText("Kết quả");
 
-        btn_Tinh.setText("Tinh");
+        btn_Tinh.setText("Tính");
         btn_Tinh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_TinhActionPerformed(evt);
@@ -65,69 +63,83 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(txt_so, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel5)
+                                .addGap(27, 27, 27)
+                                .addComponent(txt_KQ, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel4)
+                                    .addGap(27, 27, 27)
+                                    .addComponent(txt_c, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel3)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txt_mu)
-                                    .addComponent(txt_KQ)))))
+                                    .addGap(27, 27, 27)
+                                    .addComponent(txt_b, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel2)
+                                    .addGap(27, 27, 27)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1)
+                                        .addComponent(txt_a, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
+                        .addGap(72, 72, 72)
                         .addComponent(btn_Tinh)))
-                .addContainerGap(90, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(108, 108, 108))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(27, 27, 27)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txt_so, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txt_a, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txt_mu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txt_b, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
+                    .addComponent(txt_c, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
                     .addComponent(txt_KQ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btn_Tinh)
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txt_muActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_muActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txt_muActionPerformed
-
     private void btn_TinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TinhActionPerformed
         // TODO add your handling code here:
-        int so, mu, luyThua = 1;
-        so = Integer.parseInt(txt_so.getText());
-        mu = Integer.parseInt(txt_mu.getText());
-        for (int i = 0; i < mu; i++) {
-            luyThua *= so; 
-        }
-        txt_KQ.setText(String.valueOf(luyThua)); 
+        
     }//GEN-LAST:event_btn_TinhActionPerformed
-
+private void GPTBac1(double a, double b)
+        {
+            if (a == 0)
+            {
+                if (b == 0)
+                {
+                    txt_KQ.setText("Phương trình vô số nghiệm");
+                }
+                else
+                {
+                    txt_KQ.setText("Phương trình vô nghiệm");
+                }
+            }
+            else
+            {
+                txt_KQ.setText("Nghiệm là " + String.valueOf(-b / a));
+            }
+        }
     /**
      * @param args the command line arguments
      */
@@ -145,20 +157,20 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai10_GiaiPTBac2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai10_GiaiPTBac2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai10_GiaiPTBac2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Bai8_LuythuaFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai10_GiaiPTBac2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bai8_LuythuaFrame().setVisible(true);
+                new Bai10_GiaiPTBac2().setVisible(true);
             }
         });
     }
@@ -169,8 +181,10 @@ public class Bai8_LuythuaFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField txt_KQ;
-    private javax.swing.JTextField txt_mu;
-    private javax.swing.JTextField txt_so;
+    private javax.swing.JTextField txt_a;
+    private javax.swing.JTextField txt_b;
+    private javax.swing.JTextField txt_c;
     // End of variables declaration//GEN-END:variables
 }
