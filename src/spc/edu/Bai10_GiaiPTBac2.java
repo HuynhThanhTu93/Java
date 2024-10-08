@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package spc.edu;
-
+import java.lang.Math;
 /**
  *
  * @author SPC
@@ -36,6 +36,9 @@ public class Bai10_GiaiPTBac2 extends javax.swing.JFrame {
         txt_KQ = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         btn_Tinh = new javax.swing.JButton();
+        txt_dentla = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        txt_KQ1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,38 +59,45 @@ public class Bai10_GiaiPTBac2 extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setText("Dentla");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addComponent(jLabel4)
                                 .addGap(27, 27, 27)
-                                .addComponent(txt_KQ, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
-                                    .addGap(27, 27, 27)
-                                    .addComponent(txt_c, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel3)
-                                    .addGap(27, 27, 27)
-                                    .addComponent(txt_b, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel2)
-                                    .addGap(27, 27, 27)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1)
-                                        .addComponent(txt_a, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addComponent(txt_c, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(27, 27, 27)
+                                .addComponent(txt_b, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(27, 27, 27)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(txt_a, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6)
+                        .addGap(56, 56, 56))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(btn_Tinh)))
-                .addContainerGap(177, Short.MAX_VALUE))
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btn_Tinh)
+                            .addComponent(txt_KQ1, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                            .addComponent(txt_KQ))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addComponent(txt_dentla, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,14 +115,18 @@ public class Bai10_GiaiPTBac2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txt_c, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_c, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(txt_dentla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txt_KQ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txt_KQ1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addComponent(btn_Tinh)
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
         );
 
         pack();
@@ -120,6 +134,48 @@ public class Bai10_GiaiPTBac2 extends javax.swing.JFrame {
 
     private void btn_TinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TinhActionPerformed
         // TODO add your handling code here:
+        double a, b, c, x1, x2, dentla;
+        a = Double.parseDouble(txt_a.getText());
+        b = Double.parseDouble(txt_b.getText());
+        c = Double.parseDouble(txt_c.getText());
+        
+            if (a == 0)
+            {
+                
+                if (b == 0)
+                    if (c != 0)
+                {
+                    txt_KQ.setText("Phương trình vô số nghiệm");
+                }
+                else
+                {
+                    txt_KQ.setText("Phương trình vô nghiệm");
+                }
+            }else
+            {
+                txt_KQ.setText("Nghiệm là " + String.valueOf(-b / a));
+            }
+            
+                dentla = b * b - 4 * a * c;
+                txt_dentla.setText(String.valueOf(dentla));
+            
+            if (dentla < 0 )
+            {
+                txt_KQ.setText("Phương trình vô nghiệm");
+            }
+            if (dentla == 0)
+            {
+                txt_KQ.setText("Nghiệm là " + String.valueOf(-b / 2 * a));
+
+            }
+            if (dentla > 0)
+            {
+                // phương trình có 2 nghiệm phân biệt.
+                x1 = (double) ((-b + Math.sqrt(dentla)) / (2*a));
+                x2 = (double) ((-b - Math.sqrt(dentla)) / (2*a));
+                txt_KQ.setText(String.valueOf(x1));
+                txt_KQ1.setText(String.valueOf(x2));
+            } 
         
     }//GEN-LAST:event_btn_TinhActionPerformed
 private void GPTBac1(double a, double b)
@@ -182,9 +238,12 @@ private void GPTBac1(double a, double b)
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txt_KQ;
+    private javax.swing.JTextField txt_KQ1;
     private javax.swing.JTextField txt_a;
     private javax.swing.JTextField txt_b;
     private javax.swing.JTextField txt_c;
+    private javax.swing.JTextField txt_dentla;
     // End of variables declaration//GEN-END:variables
 }
