@@ -137,7 +137,7 @@ public class bai12_JF_TinhLaiXuat extends javax.swing.JFrame {
         for (int i = 1; i <= soNam; i++) {
             tienLai = tienGui * laiXuat;
             double tienLanh = tienGui + tienLai;
-            txa_kq.append("Nam: " + i + " co Tien gui la: " + tienGui + " voi Lai xuat la: " + laiXuat + " vay Tien lai duoc nhan la: " + tienLai + " Tien thuc lanh: " + tienLanh + "\r\n");
+            txa_kq.append("Nam: " + i + " co Tien gui la: " + tienGui + " voi Lai xuat la: " + laiXuat + " vay Tien lai duoc nhan la: " + String.format("%.3f",tienLai) + " Tien thuc lanh: " + tienLanh + "\r\n");
             tienGui += tienLai;
             
         }

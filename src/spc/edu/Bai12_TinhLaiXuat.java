@@ -23,7 +23,7 @@ public class Bai12_TinhLaiXuat {
          for (int i = 1; i <= sonam; i++) {
              tienLai = tienGui * laiXuat;
              tienGui += tienLai;
-             System.out.println("Tien lai: " + tienLai);
+             System.out.println("Tien lai: " + String.format("%.3f",tienLai));
         }
          
     }
